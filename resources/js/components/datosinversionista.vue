@@ -3,7 +3,7 @@
     <v-card-title>
       <span class="headline">Ingresar datos</span>
     </v-card-title>
-    <v-layout grid-list-md text-xs-center fluid app>
+    <v-layout grid-list-md text-xs-center fluid>
       <v-card-text>
         <v-form v-model="validar">
           <v-container row wrap>
@@ -13,19 +13,16 @@
                   <v-text-field label="Nombre(s)"></v-text-field>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
-                  <v-text-field label="Apellido Paterno"></v-text-field>
+                  <v-text-field label="Apellido paterno"></v-text-field>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
-                  <v-text-field label="Apellido Materno"></v-text-field>
+                  <v-text-field label="Apellido materno"></v-text-field>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
                   <v-text-field label="RFC"></v-text-field>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
                   <v-select label="Grado acádemico"></v-select>
-                </v-flex>
-                <v-flex xs12 sm8 md8>
-                  <v-text-field label="Profesión"></v-text-field>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -55,16 +52,19 @@
                     </template>
                     <v-date-picker v-model="start" no-title scrollable>
                       <v-spacer></v-spacer>
-                      <v-btn flat color="primary" @click="startMenu = false">Cancel</v-btn>
+                      <v-btn flat color="primary" @click="startMenu = false">Cancelar</v-btn>
                       <v-btn flat color="primary" @click="$refs.startMenu.save(start)">OK</v-btn>
                     </v-date-picker>
                   </v-menu>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
-                  <v-text-field label="Correo elétronico"></v-text-field>
+                  <v-text-field label="Correo electrónico"></v-text-field>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
                   <v-text-field label="Celular"></v-text-field>
+                </v-flex>
+                <v-flex xs12 sm8 md8>
+                  <v-text-field label="Profesión"></v-text-field>
                 </v-flex>
                 <v-flex xs12 sm8 md8>
                   <v-text-field label="Empresa de trabajo"></v-text-field>

@@ -20,7 +20,6 @@ Vue.use(Vuetify, {
 });
 Vue.use(VueRouter);
 
-import holaMundo from './components/HolaMundo';
 import home from './components/home';
 import intro from './components/introduccion';
 import simular from './components/simularinversion';
@@ -36,8 +35,8 @@ const app = new Vue({
         mode: "history",
         routes: [
             {
-                path: "/",
-                name: "inicio",
+                path: "",
+                name: "home",
                 component: home,
                 children: [
                     {
@@ -47,46 +46,46 @@ const app = new Vue({
                         link: "/"
                     },
                     {
-                        path: "/simular-inversion",
+                        path: "simular-inversion",
                         name: "simular",
                         component: simular,
-                        link: "/"
+                        link: "/simular-inversion"
                     },
                     {
-                        path: "/ingresar-datos",
+                        path: "ingresar-datos",
                         name: "datos",
                         component: ingresardatos,
-                        link: "/"
-                    }, 
+                        link: "/ingresar-datos"
+                    },
                     {
-                        path: "/verificar-datos",
+                        path: "verificar-datos",
                         name: "verificarcion",
                         component: verificar,
-                        link: "/"
+                        link: "/verificar-datos"
                     },
                     {
-                        path: "/registrar-direccion",
+                        path: "registrar-direccion",
                         name: "direccion",
                         component: direccion,
-                        link: "/"
+                        link: "/registrar-direccion"
                     },
                     {
-                        path: "/registrar-datos-financieros",
+                        path: "registrar-datos-financieros",
                         name: "datosfinancieros",
                         component: datosfinancieros,
-                        link: "/"
+                        link: "/registrar-datos-financieros"
                     },
                     {
-                        path: "/terminar-registro",
+                        path: "terminar-registro",
                         name: "firma",
                         component: firma,
-                        link: "/"
+                        link: "/terminar-registro"
                     },
                     {
-                        path: "/terminar-inversion",
+                        path: "terminar-inversion",
                         name: "final",
                         component: final,
-                        link: "/"
+                        link: "/terminar-inversion"
                     }
                 ]
             }

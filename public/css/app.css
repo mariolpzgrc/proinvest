@@ -11104,3 +11104,7 @@ a.text-dark:focus {
   }
 }
 
+html {
+  overflow-y: auto !important;
+}
+

@@ -1,13 +1,11 @@
 <template>
-  <v-container grid-list-md text-xs-center fluid app>
-    <v-card-tittle>
+  <v-container grid-list-md text-xs-center fluid>
       <span class="headline">Último paso</span>
-    </v-card-tittle>
     <h4>En esta sección debe de subir su documentación y registrar su firma electrónica.</h4>
     <v-form v-model="validar">
       <v-container>
         <v-layout row wrap>
-          <v-flex xs12 md6 sm6>
+          <v-flex xs12 md4 sm4>
             <v-layout column>
               <v-flex xs8 md8 sm8>
                 <v-btn
@@ -58,11 +56,7 @@
               :rules="[v => !!v || 'Desea continuar!']"
               label="Acepto términos y condiciones."
             ></v-checkbox>
-            <v-checkbox
-              v-model="checkbox"
-              :rules="[v => !!v || 'Desea continuar!']"
-              label="Al dar click en el botón confirmo mi solicitud de inversión."
-            ></v-checkbox>
+            <h5>Al dar click en el botón confirmo mi solicitud de inversión.</h5>
             </v-layout>
           </v-flex>
         </v-layout>

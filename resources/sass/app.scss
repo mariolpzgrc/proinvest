@@ -7,3 +7,7 @@
 
 // Vuetify
 @import "~vuetify/dist/vuetify.min.css";
+
+html {
+    overflow-y: auto !important;
+}
